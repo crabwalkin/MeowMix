@@ -17,7 +17,7 @@ AMIDEWINx64.EXE /PPN %random%%random%
 AMIDEWINx64.EXE /CSK "Default string"
 AMIDEWINx64.EXE /CS "Default string"
 AMIDEWINx64.EXE /CA %random%%random%
-AMIDEWINx64.EXE /BS "4%RANDOM%%RANDOM%-48-Os%RANDOM%"
+AMIDEWINx64.EXE /BS "4%RANDOM%%RANDOM%-48-OW%RANDOM%"
 cls
 net stop winmgmt /y
 net start winmgmt /y
