@@ -34,12 +34,7 @@ taskkill /f /im BEService.exe > nul
 taskkill /f /im BEServices.exe > nul
 taskkill /f /im BattleEye.exe > nul
 
-rmdir /s /q "C:\Program Files (x86)\EasyAntiCheat" >nul 2>&1
-rmdir /s /q "C:\ProgramData\EasyAntiCheat" >nul 2>&1
-rmdir /s /q "%APPDATA%\EasyAntiCheat" >nul 2>&1
-rmdir /s /q "%LOCALAPPDATA%\EasyAntiCheat" >nul 2>&1
-rmdir /s /q "%LOCALAPPDATA%\BattlEye" >nul 2>&1
-del /f /s /q "C:\Windows\System32\drivers\EasyAntiCheat.sys" >nul 2>&1
+
 echo [*] Nuking Prefetch...
 del /f /s /q "C:\Windows\Prefetch\*.pf" >nul 2>&1
 echo [*] Cleaning TEMP...
