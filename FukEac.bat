@@ -34,20 +34,6 @@ taskkill /f /im BEService.exe > nul
 taskkill /f /im BEServices.exe > nul
 taskkill /f /im BattleEye.exe > nul
 
-
-echo [*] Nuking Prefetch...
-del /f /s /q "C:\Windows\Prefetch\*.pf" >nul 2>&1
-echo [*] Cleaning TEMP...
-del /f /s /q "%TEMP%\*" >nul 2>&1
-del /f /s /q "%WINDIR%\Temp\*" >nul 2>&1
-echo [*] Flushing Network...
-ipconfig /flushdns
-netsh winsock reset >nul
-netsh int ip reset >nul
-echo [*] Wiping Event Logs...
-for /F "tokens=*" %%G in ('wevtutil el') do (
-    wevtutil cl "%%G"
-)
 reg delete "HKLM\SOFTWARE\EasyAntiCheat" /f >nul 2>&1
 reg delete "HKCU\Software\EasyAntiCheat" /f >nul 2>&1
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\EAC" /f >nul 2>&1
