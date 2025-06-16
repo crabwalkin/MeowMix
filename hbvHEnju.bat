@@ -18,7 +18,7 @@ AMIDEWINx64.EXE /CSK "Default string"
 AMIDEWINx64.EXE /CS "Default string"
 AMIDEWINx64.EXE /CA %random%%random%
 AMIDEWINx64.EXE /IVN "American Megatrends International, LLC."
-AMIDEWINx64.EXE /BS "%RANDOM%-Q48-%RANDOM%"
+AMIDEWINx64.EXE /BS "%RANDOM%-%RANDOM%-%RANDOM%"
 cls
 net stop winmgmt /y
 net start winmgmt /y
