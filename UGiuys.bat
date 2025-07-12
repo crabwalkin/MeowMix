@@ -1,0 +1,67 @@
+cd %~dp0
+AMIDEWINx64.EXE /SM "To Be Filled By O.E.M."
+AMIDEWINx64.EXE /BM "To Be Filled By O.E.M."
+AMIDEWINx64.EXE /BP "%RANDOM%7-%RANDOM%-%RANDOM%%RANDOM%"
+AMIDEWINx64.EXE /SP "%RANDOM%%RANDOM%-%RANDOM%"
+AMIDEWINx64.EXE /SU auto
+AMIDEWINx64.EXE /SS "6%RANDOM%%RANDOM%4"
+AMIDEWINx64.EXE /CSK %random%%random%
+AMIDEWINx64.EXE /CM  %random%%random%
+AMIDEWINx64.EXE /SK %random%%random%
+AMIDEWINx64.EXE /SF %random%%random%
+AMIDEWINx64.EXE /BT %random%%random%
+AMIDEWINx64.EXE /BLC %random%%random%
+AMIDEWINx64.EXE /PSN "%RANDOM%%RANDOM%8"
+AMIDEWINx64.EXE /PAT %random%%random%
+AMIDEWINx64.EXE /PPN %random%%random%
+AMIDEWINx64.EXE /CSK "Default string"
+AMIDEWINx64.EXE /CS "Default string"
+AMIDEWINx64.EXE /CA %random%%random%
+AMIDEWINx64.EXE /IVN "American Megatrends International, LLC."
+AMIDEWINx64.EXE /BS "%RANDOM%-%RANDOM%-%RANDOM%"
+AMIDEWINx64.EXE /IVN "American Megatrends International, LLC."
+AMIDEWINx64.EXE /SM "Custom Manufacturer %random%"
+AMIDEWINx64.EXE /SP "System Product %random%"
+AMIDEWINx64.EXE /SV "%random:~0,2%.%random:~0,1%"
+AMIDEWINx64.EXE /SK "SKU-%random%"
+AMIDEWINx64.EXE /ID "%random:~0,2%/%random:~0,2%/20%random:~0,2%"
+AMIDEWINx64.EXE /SS "System-%random%%random%"
+AMIDEWINx64.EXE /SF "Family-%random%"
+AMIDEWINx64.EXE /CM "Board-%random%"
+AMIDEWINx64.EXE /CV "Chassis-%random%"
+AMIDEWINx64.EXE /CA "Asset-%random%"
+AMIDEWINx64.EXE /CSK "Key-%random%"
+AMIDEWINx64.EXE /CMH 3 "BoardH-%random%"
+AMIDEWINx64.EXE /CVH 3 "ChassisH-%random%"
+AMIDEWINx64.EXE /CSH 3 "CSH-%random%"
+AMIDEWINx64.EXE /CAH 3 "CAH-%random%"
+AMIDEWINx64.EXE /CSKH 3 "CSKH-%random%"
+AMIDEWINx64.EXE /OS 1 "OEM1-%random%"
+AMIDEWINx64.EXE /OS 2 "OEM2-%random%"
+AMIDEWINx64.EXE /OS 3 "OEM3-%random%"
+AMIDEWINx64.EXE /OS 4 "OEM4-%random%"
+AMIDEWINx64.EXE /OS 5 "OEM5-%random%"
+AMIDEWINx64.EXE /OS 6 "OEM6-%random%"
+AMIDEWINx64.EXE /OS 7 "OEM7-%random%"
+AMIDEWINx64.EXE /OS 8 "OEM8-%random%"
+AMIDEWINx64.EXE /SCO 1 "Config1-%random%"
+AMIDEWINx64.EXE /SCO 2 "Config2-%random%"
+AMIDEWINx64.EXE /SCO 3 "Config3-%random%"
+AMIDEWINx64.EXE /SCO 4 "Config4-%random%"
+AMIDEWINx64.EXE /CS "Chassis-%random%"
+AMIDEWINx64.EXE /PAT "%random%-%random%"
+AMIDEWINx64.EXE /PSN "%random%-%random%%random%"
+AMIDEWINx64.EXE /PPN "Part-%random%%random%"
+AMIDEWINx64.EXE /SU auto
+AMIDEWINx64.EXE /BSH 2 BX-%chars%
+AMIDEWINx64.EXE /BS BX-%chars%
+AMIDEWINx64.EXE /CM "%random%-%random%"
+AMIDEWINx64.EXE /BM "%random%-%random%"
+cls
+net stop winmgmt /y
+net start winmgmt /y
+sc stop winmgmt
+timeout 1
+sc start winmgmt
+timeout 1
+exit
