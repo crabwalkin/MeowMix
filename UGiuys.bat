@@ -41,7 +41,7 @@ call :randhex 4
 set H4=!HEXSTR!
 call :randhex 12
 set H5=!HEXSTR!
-AMIDEWINx64.EXE /SU "%H1%-%H2%-%H3%-%H4%-%H5%"
+AMIDEWINx64.EXE /SU "%random%%random%"
 call :randhex 4
 set CA1=!HEXSTR!
 call :randhex 4
@@ -63,3 +63,4 @@ cls
 echo Done. All IDs have been randomized and look legit!
 pause
 exit
+
