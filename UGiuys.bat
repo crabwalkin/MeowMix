@@ -1,5 +1,4 @@
 cd %~dp0
-AMIDEWINx64.EXE /SU %random%%random%
 AMIDEWINx64.EXE /SS %random%%random%
 AMIDEWINx64.EXE /CSK %random%%random%
 AMIDEWINx64.EXE /CM  %random%%random%
@@ -28,4 +27,5 @@ timeout 1
 sc start winmgmt
 timeout 1
 exit
+
 
